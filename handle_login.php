@@ -13,7 +13,7 @@
     echo "<script>window.location.href='./index.php';</script>";
   } else {
 
-    $stmt = $conn->prepare("SELECT * from shuanshuan030913_users WHERE username=?");
+    $stmt = $conn->prepare("SELECT * from users WHERE username=?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
 

@@ -8,7 +8,7 @@
 
   if ($is_login && $nickname === $membercheck_row['name']) {
 
-    $stmt = $conn->prepare("DELETE FROM shuanshuan030913_comments WHERE `id`=? or `parents_id`=?");
+    $stmt = $conn->prepare("DELETE FROM comments WHERE `id`=? or `parents_id`=?");
     $stmt->bind_param("ss", $_POST['id'], $_POST['id']);
     $stmt->execute();
     $result = 'true';

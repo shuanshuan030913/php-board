@@ -3,7 +3,7 @@
 
   $page = intval($_POST['pageNum']); // 當前頁
 
-  $comm_sql = "SELECT * from shuanshuan030913_comments WHERE parents_id = 0 ORDER BY created_at DESC";
+  $comm_sql = "SELECT * from comments WHERE parents_id = 0 ORDER BY created_at DESC";
   $comm_result = $conn->query($comm_sql);
 
   $data_nums = $comm_result->num_rows;

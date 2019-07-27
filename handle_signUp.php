@@ -14,7 +14,7 @@
     die('所有選項接為必填！');
   }
 
-  $stmt = $conn->prepare("INSERT INTO shuanshuan030913_users(username, password, nickname) VALUES(?, ?, ?)");
+  $stmt = $conn->prepare("INSERT INTO users(username, password, nickname) VALUES(?, ?, ?)");
   $stmt->bind_param("sss", $username, $hash, $nickname);
 
   if ($stmt->execute()) {
