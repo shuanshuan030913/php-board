@@ -10,10 +10,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-  <header class="warning px-2">
+  <!-- <header class="warning px-2">
     <strong>注意！本站為練習用網站，因教學用途刻意忽略資安的實作，註冊時請勿使用任何真實的帳號或密碼。</strong>
-  </header>
-  <div class="container-fluid px-5">
+  </header> -->
+  <div class="container-fluid mt-4 px-5">
     <div class="row">
       <main class="board mx-auto col-lg-6 col-md-8 col-sm-12">
         <h1 class="title"></h1>
